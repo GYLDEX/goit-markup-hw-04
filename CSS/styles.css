@@ -11,6 +11,7 @@
     --white-font: rgb(255, 255, 255, 1);
     --background-banner: rgb(47, 48, 58, 1);
     --section-team: rgb(245, 244, 250, 1);
+    --border-icon: rgba(175, 177, 184, 1);
 }
 
 /*  BODY  */
@@ -28,6 +29,10 @@ ul {
 
 header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+svg {
+    fill: currentColor;
 }
 
 /* WEBSTUDIO LOGO*/
@@ -137,6 +142,32 @@ color: var(--blue-text);
     width: 600px;
     height: 600px;
 }
+ .banner {
+    background-color: var(--background-title);
+    background-image: linear-gradient(to bottom,
+    rgba(162, 165, 166, 0.2) 0%,
+    rgba(135, 137, 144, 0.4) 4%,
+    rgba(91, 91, 108, 0.5) 16%,
+    rgba(55, 54, 79, 0.5) 39%,
+    rgba(26, 25, 56, 0.5) 74%,
+    rgba(2, 0, 36, 1) 100%),
+    url(../IMAGES/Imagen.png);
+    background-size: cover;
+    text-align: center;
+}
+    
+.principal-section .request-button {
+            color: var(--white-font);
+            background-color: var(--blue-text);
+            font-weight: 700;
+            line-height: 1.9;
+            letter-spacing: 0.06em;
+            width: 261px;
+            height: 50px;
+            border-radius: 4px;
+            border-color: transparent;
+        cursor: pointer;
+}
 
 /* ABOUT US */
 
@@ -174,6 +205,22 @@ color: var(--blue-text);
     justify-content: space-between;
     gap: 30px;
 }
+
+.about-us-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.background-about {
+    width: 270px;
+    height: 120px;
+    background-color: var(--section-team)
+}
+
+.about-us-icon {
+    margin: 25px 100px;
+}
 /* GALERY SERVICES */
 
 .our-service .service-tittle{ 
@@ -200,6 +247,7 @@ text-align: center;
     letter-spacing: 0.03em;
     text-align: center;
 }
+
 
 /* OUR TEAM */
 
@@ -264,6 +312,95 @@ text-align: center;
         line-height: 19px;
         letter-spacing: 0.03em;
         text-align: center;
+}
+
+.social-networks-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px 30px 32px;
+}
+
+.social-networks-item {
+    background-color: var(--white-font);
+    color: var(--border-icon);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networks-item:hover {
+    background-color: var(--blue-text);
+    color: var(--white-font);
+    cursor: pointer;
+}
+
+.social-networks-item:focus {
+    background-color: var(--blue-text);
+    color: var(--white-font);
+}
+
+
+/*CLIENTES REGULARES*/
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+
+}
+.clients-title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.clients-item {
+    width: 170px;
+    height: 81px;
+    border: 1px solid var(--border-icon);
+    color: var(--border-icon);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.clients-item:hover {
+    border-color: var(--blue-text);
+    color: var(--blue-text);
+    cursor: pointer;
+}
+
+
+.clients-icon-left {
+    padding: 21px 60px;
+    width: 170px;
+    height: 81px;
+}
+
+.clients-icon {
+    padding: 21px 45px;
+    width: 170px;
+    height: 81px;
+}
+
+.link {
+    color: var(--border-icon);
+}
+
+.link:visited {
+    color: var(--border-icon);
+}
+
+.link:hover {
+    color: var(--blue-text)
 }
 /* FOOTER */
 
@@ -474,4 +611,43 @@ cursor: pointer;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.social-networks-footer {
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networks-text {
+    color: var(--white-font);
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 32px;
+}
+
+.social-networks-item-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.social-networks-item-footer:hover {
+    background-color: var(--blue-text);
+    cursor: pointer;
+}
+
+.social-networks-icon-footer {
+    fill: var(--white-font);
 }
