@@ -253,8 +253,6 @@ text-align: center;
 
 .section-team {
     background: #F5F4FA;
-            width: 1600px;
-            height: 648px;
             padding-left: 15px;
             padding-right: 15px;
             margin: auto;
@@ -406,7 +404,7 @@ text-align: center;
 
 .footer-final{
     background-color: var(--background-banner);
-    padding: 60px 1154px 60px 215px;
+    padding: 90px 0px ;
 }
 .footer-text{
     color: var(--white-font);
