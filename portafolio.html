@@ -25,12 +25,21 @@
                 </ul>
             </nav>
             <ul class="contact">
-                <img src="IMAGES/sobre.png" alt="sobre">
-                <li class="contact-element"><a class="contact-link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="contact-element">
+                    <a class="contact-link" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12">
+                            <use href="./IMAGES/ICONS/symbol-defs-header.svg#icon-headersobre"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
-                <img src="IMAGES/Vector.png" alt="telefono">
-                <li class="contact-element"><a class="contact-link" href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
+
+                <li class="contact-element">
+                    <a class="contact-link" href="tel:+52 55 5529 6000">
+                        <svg width="10" height="16">
+                            <use href="./IMAGES/ICONS/symbol-defs-header.svg#icon-headertelfono-inteligente"></use>
+                        </svg>
+                        +52 55 5529 6000</a>
                 </li>
             </ul>
         </div>
@@ -121,17 +130,20 @@
     </main>
     <!--FOOTER-->
     <footer class="footer-final">
-        <a class="icon-two" href="/index.html">WebStudio</h3>
-            <address>
-                <p class="footer-text">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-                <ul class="footer-info">
-                    <li class="footer-item">info@example.com</li>
-                    <li class="footer-item">+52 55 5529 6000</li>
-                </ul>
-            </address>
+        <div class="container" style="display: flex; gap: 70px;">
+            <div>
+                <a class="icon-two" href="/index.html">WebStudio</h3>
+                    <address>
+                        <p class="footer-text">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+                        <ul class="footer-info">
+                            <li class="footer-item">info@example.com</li>
+                            <li class="footer-item">+52 55 5529 6000</li>
+                        </ul>
+                    </address>
+            </div>
             <div class="social-networks-footer">
                 <p class="social-networks-text">Encuentrenos en</p>
-                <ul>
+                <ul style="display: flex; gap: 10px;">
                     <li class="social-networks-item-footer">
                         <svg class="social-networks-icon-footer" width="20" height="20">
                             <use href="./IMAGES/ICONS/symbol-defs-RS.svg#icon-rsinstagram"></use>
@@ -154,6 +166,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
     </footer>
 </body>
 
